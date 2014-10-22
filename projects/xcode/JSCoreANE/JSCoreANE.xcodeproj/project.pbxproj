@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		841AF17B19F7F2E2005D37D9 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841AF17A19F7F2E2005D37D9 /* JavaScriptCore.framework */; };
+		8489384819F6A75700A19F77 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8489384719F6A75700A19F77 /* Cocoa.framework */; };
+		8489385219F6A75700A19F77 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8489385019F6A75700A19F77 /* InfoPlist.strings */; };
+		8489385619F6A75700A19F77 /* JSCoreANE.m in Sources */ = {isa = PBXBuildFile; fileRef = 8489385519F6A75700A19F77 /* JSCoreANE.m */; };
+		8489387519F6A93300A19F77 /* FlashRuntimeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8489387419F6A93300A19F77 /* FlashRuntimeExtensions.h */; };
+		8489387D19F6D6B600A19F77 /* Adobe AIR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8489387C19F6D6B600A19F77 /* Adobe AIR.framework */; };
+		8489390C19F7306800A19F77 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8489390B19F7306800A19F77 /* JavaScriptCore.framework */; };
+		8489391319F730A400A19F77 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8489391219F730A400A19F77 /* Foundation.framework */; };
+		8489393719F730F600A19F77 /* JSCoreANE.m in Sources */ = {isa = PBXBuildFile; fileRef = 8489385519F6A75700A19F77 /* JSCoreANE.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8489390F19F730A400A19F77 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		841AF17A19F7F2E2005D37D9 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		8489384419F6A75700A19F77 /* JSCoreANE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSCoreANE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8489384719F6A75700A19F77 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		8489384A19F6A75700A19F77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8489384B19F6A75700A19F77 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		8489384C19F6A75700A19F77 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		8489384F19F6A75700A19F77 /* JSCoreANE-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JSCoreANE-Info.plist"; sourceTree = "<group>"; };
+		8489385119F6A75700A19F77 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8489385319F6A75700A19F77 /* JSCoreANE-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JSCoreANE-Prefix.pch"; sourceTree = "<group>"; };
+		8489385419F6A75700A19F77 /* JSCoreANE.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSCoreANE.h; sourceTree = "<group>"; };
+		8489385519F6A75700A19F77 /* JSCoreANE.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSCoreANE.m; sourceTree = "<group>"; };
+		8489385C19F6A75800A19F77 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8489387419F6A93300A19F77 /* FlashRuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlashRuntimeExtensions.h; sourceTree = "<group>"; };
+		8489387C19F6D6B600A19F77 /* Adobe AIR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "Adobe AIR.framework"; sourceTree = "<group>"; };
+		8489390B19F7306800A19F77 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		8489391119F730A400A19F77 /* libJSCoreANEIOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJSCoreANEIOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8489391219F730A400A19F77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8489391619F730A400A19F77 /* JSCoreANEIOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JSCoreANEIOS-Prefix.pch"; sourceTree = "<group>"; };
+		8489393519F730DF00A19F77 /* libJavaScriptCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libJavaScriptCore.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8489384019F6A75700A19F77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8489390C19F7306800A19F77 /* JavaScriptCore.framework in Frameworks */,
+				8489384819F6A75700A19F77 /* Cocoa.framework in Frameworks */,
+				8489387D19F6D6B600A19F77 /* Adobe AIR.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8489390E19F730A400A19F77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				841AF17B19F7F2E2005D37D9 /* JavaScriptCore.framework in Frameworks */,
+				8489391319F730A400A19F77 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8489383A19F6A75700A19F77 = {
+			isa = PBXGroup;
+			children = (
+				8489384D19F6A75700A19F77 /* JSCoreANE */,
+				8489391419F730A400A19F77 /* JSCoreANEIOS */,
+				8489384619F6A75700A19F77 /* Frameworks */,
+				8489384519F6A75700A19F77 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8489384519F6A75700A19F77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8489384419F6A75700A19F77 /* JSCoreANE.framework */,
+				8489391119F730A400A19F77 /* libJSCoreANEIOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8489384619F6A75700A19F77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				841AF17A19F7F2E2005D37D9 /* JavaScriptCore.framework */,
+				8489390B19F7306800A19F77 /* JavaScriptCore.framework */,
+				8489387C19F6D6B600A19F77 /* Adobe AIR.framework */,
+				8489384719F6A75700A19F77 /* Cocoa.framework */,
+				8489385C19F6A75800A19F77 /* XCTest.framework */,
+				8489391219F730A400A19F77 /* Foundation.framework */,
+				8489384919F6A75700A19F77 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8489384919F6A75700A19F77 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8489384A19F6A75700A19F77 /* Foundation.framework */,
+				8489384B19F6A75700A19F77 /* CoreData.framework */,
+				8489384C19F6A75700A19F77 /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		8489384D19F6A75700A19F77 /* JSCoreANE */ = {
+			isa = PBXGroup;
+			children = (
+				8489387419F6A93300A19F77 /* FlashRuntimeExtensions.h */,
+				8489385419F6A75700A19F77 /* JSCoreANE.h */,
+				8489385519F6A75700A19F77 /* JSCoreANE.m */,
+				8489384E19F6A75700A19F77 /* Supporting Files */,
+			);
+			path = JSCoreANE;
+			sourceTree = "<group>";
+		};
+		8489384E19F6A75700A19F77 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8489384F19F6A75700A19F77 /* JSCoreANE-Info.plist */,
+				8489385019F6A75700A19F77 /* InfoPlist.strings */,
+				8489385319F6A75700A19F77 /* JSCoreANE-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8489391419F730A400A19F77 /* JSCoreANEIOS */ = {
+			isa = PBXGroup;
+			children = (
+				8489393519F730DF00A19F77 /* libJavaScriptCore.a */,
+				8489391519F730A400A19F77 /* Supporting Files */,
+			);
+			path = JSCoreANEIOS;
+			sourceTree = "<group>";
+		};
+		8489391519F730A400A19F77 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8489391619F730A400A19F77 /* JSCoreANEIOS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8489384119F6A75700A19F77 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8489387519F6A93300A19F77 /* FlashRuntimeExtensions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8489384319F6A75700A19F77 /* JSCoreANE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8489386C19F6A75800A19F77 /* Build configuration list for PBXNativeTarget "JSCoreANE" */;
+			buildPhases = (
+				8489383F19F6A75700A19F77 /* Sources */,
+				8489384019F6A75700A19F77 /* Frameworks */,
+				8489384119F6A75700A19F77 /* Headers */,
+				8489384219F6A75700A19F77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JSCoreANE;
+			productName = JSCoreANE;
+			productReference = 8489384419F6A75700A19F77 /* JSCoreANE.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8489391019F730A400A19F77 /* JSCoreANEIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8489392F19F730A400A19F77 /* Build configuration list for PBXNativeTarget "JSCoreANEIOS" */;
+			buildPhases = (
+				8489390D19F730A400A19F77 /* Sources */,
+				8489390E19F730A400A19F77 /* Frameworks */,
+				8489390F19F730A400A19F77 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JSCoreANEIOS;
+			productName = JSCoreANEIOS;
+			productReference = 8489391119F730A400A19F77 /* libJSCoreANEIOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8489383B19F6A75700A19F77 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = PeyTy;
+			};
+			buildConfigurationList = 8489383E19F6A75700A19F77 /* Build configuration list for PBXProject "JSCoreANE" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8489383A19F6A75700A19F77;
+			productRefGroup = 8489384519F6A75700A19F77 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8489384319F6A75700A19F77 /* JSCoreANE */,
+				8489391019F730A400A19F77 /* JSCoreANEIOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8489384219F6A75700A19F77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8489385219F6A75700A19F77 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8489383F19F6A75700A19F77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8489385619F6A75700A19F77 /* JSCoreANE.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8489390D19F730A400A19F77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8489393719F730F600A19F77 /* JSCoreANE.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8489385019F6A75700A19F77 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8489385119F6A75700A19F77 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8489386A19F6A75800A19F77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.8;
+			};
+			name = Debug;
+		};
+		8489386B19F6A75800A19F77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx10.8;
+			};
+			name = Release;
+		};
+		8489386D19F6A75800A19F77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JSCoreANE/JSCoreANE-Prefix.pch";
+				INFOPLIST_FILE = "JSCoreANE/JSCoreANE-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		8489386E19F6A75800A19F77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JSCoreANE/JSCoreANE-Prefix.pch";
+				INFOPLIST_FILE = "JSCoreANE/JSCoreANE-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		8489393019F730A400A19F77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/JSCoreANEIOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JSCoreANEIOS/JSCoreANEIOS-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JSCoreANEIOS",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8489393119F730A400A19F77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/JSCoreANEIOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JSCoreANEIOS/JSCoreANEIOS-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JSCoreANEIOS",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8489383E19F6A75700A19F77 /* Build configuration list for PBXProject "JSCoreANE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8489386A19F6A75800A19F77 /* Debug */,
+				8489386B19F6A75800A19F77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8489386C19F6A75800A19F77 /* Build configuration list for PBXNativeTarget "JSCoreANE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8489386D19F6A75800A19F77 /* Debug */,
+				8489386E19F6A75800A19F77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8489392F19F730A400A19F77 /* Build configuration list for PBXNativeTarget "JSCoreANEIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8489393019F730A400A19F77 /* Debug */,
+				8489393119F730A400A19F77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8489383B19F6A75700A19F77 /* Project object */;
+}

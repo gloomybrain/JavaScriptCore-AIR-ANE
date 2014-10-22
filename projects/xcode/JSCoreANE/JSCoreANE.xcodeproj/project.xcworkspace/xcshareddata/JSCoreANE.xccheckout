@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A6F22A7D-A753-4ECC-87B9-29340C40C12F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>JSCoreANE</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BFF57B36-EDF4-40F1-AD31-D461A917FB52</key>
+		<string>https://github.com/PeyTy/JavaScriptCore-AIR-ANE.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>projects/xcode/JSCoreANE/JSCoreANE.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BFF57B36-EDF4-40F1-AD31-D461A917FB52</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/PeyTy/JavaScriptCore-AIR-ANE.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BFF57B36-EDF4-40F1-AD31-D461A917FB52</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BFF57B36-EDF4-40F1-AD31-D461A917FB52</string>
+			<key>IDESourceControlWCCName</key>
+			<string>JavaScriptCore-AIR-ANE</string>
+		</dict>
+	</array>
+</dict>
+</plist>
