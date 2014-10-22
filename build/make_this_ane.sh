@@ -35,3 +35,49 @@ ANENAME=$REPLACE
 
 cat extension.xml | sed -e "s/$SEARCH/$REPLACE/g" >> ./temp/extension.xml
 cp platformoptions.xml ./temp/
+
+# Copy binaries:
+cp -rf ../lib/libJSCoreANEIOS.a ./temp/JSCoreANE.a
+cp -rf ../lib/libJSCoreANEIOS386.a ./temp/JSCoreANE386.a
+cp -rf ../lib/JSCoreANE.framework ./temp/JSCoreANE.framework
+
+[[ -f "../ane/$ANENAME.ane" ]] && rm -f "../ane/$ANENAME.ane"
+
+SWFVERSION=19
+
+INCLUDE_CLASSES="alegorium.$ANENAME"
+echo "INCLUDE_CLASSES: $INCLUDE_CLASSES"
+
+SRCPATH="../as3/"
+
+# Build:
+echo "GENERATING SWC"
+$ACOMPC -source-path $SRCPATH -include-classes $INCLUDE_CLASSES -swf-version=$SWFVERSION -define+=CONFIG::mock,false -output temp/$ANENAME.swc
+sleep 0
+
+cd temp
+echo "GENERATING LIBRARY from SWC"
+
+unzip $ANENAME.swc
+sleep 0
+[[ -f "catalog.xml" ]] && rm -f "catalog.xml"
+
+echo "GENERATING ANE"
+
+# Only Mac
+#$ADT -package -target ane $ANENAME.ane extension.xml -swc $ANENAME.swc -platform default library.swf -platform MacOS-x86 -C ./ .
+
+# Mac & iOS
+$ADT -package -target ane $ANENAME.ane extension.xml -swc $ANENAME.swc -platform default library.swf -platform MacOS-x86 -C ./ . -platform iPhone-x86 -C ./ . -platform iPhone-ARM -C ./ . -platformoptions platformoptions.xml
+
+sleep 0
+
+mv $ANENAME.ane ../../ane/
+
+# Clean:
+[[ -f "library.swf" ]] && rm -f "library.swf"
+[[ -f "$ANENAME.swc" ]] && rm -f "$ANENAME.swc"
+cd ..
+rm -rf temp
+
+echo "DONE!"
