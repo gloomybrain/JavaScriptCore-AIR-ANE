@@ -26,3 +26,9 @@
 *.exe
 *.out
 *.app
+
+demo/demo.fla
+
+demo/demo.swf
+
+demo/demo-app.xml
