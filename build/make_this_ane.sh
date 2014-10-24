@@ -37,8 +37,10 @@ cat extension.xml | sed -e "s/$SEARCH/$REPLACE/g" >> ./temp/extension.xml
 cp platformoptions.xml ./temp/
 
 # Copy binaries:
-cp -rf ../lib/libJSCoreANEIOS.a ./temp/JSCoreANE.a
-cp -rf ../lib/libJSCoreANEIOS386.a ./temp/JSCoreANE386.a
+#cp -rf ../lib/libJSCoreANEIOS.a ./temp/JSCoreANE.a
+#cp -rf ../lib/libJSCoreANEIOS386.a ./temp/JSCoreANE386.a
+cp -rf ../projects/xcode/JSCoreANE/Build/Products/Release-iphoneos/libJSCoreANEIOS.a  ./temp/JSCoreANE.a
+cp -rf ../projects/xcode/JSCoreANE/Build/Products/Release-iphonesimulator/libJSCoreANEIOS.a  ./temp/JSCoreANE386.a
 cp -rf ../lib/JSCoreANE.framework ./temp/JSCoreANE.framework
 
 [[ -f "../ane/$ANENAME.ane" ]] && rm -f "../ane/$ANENAME.ane"
