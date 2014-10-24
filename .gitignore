@@ -47,3 +47,9 @@ demo/demo-app.xml
 
 AOTBuildOutput*
 
+
+projects/xcode/JSCoreANE/DerivedData/
+
+projects/xcode/JSCoreANE/Build/
+
+projects/android/
