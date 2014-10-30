@@ -1,16 +1,17 @@
 ﻿package  {
-	
+
 	import flash.display.MovieClip;
 	import alegorium.JSCoreANE;
 	import flash.events.Event;
-	
+	import flash.utils.getTimer;
+
 	public class Demo extends MovieClip {
-		
+
 		public function Demo() {
 			// Чтобы не портить данные телеметрии, лучше запустить со второго фрейма
 			addEventListener(Event.ENTER_FRAME, demo);
-		}	
-		
+		}
+
 		public function demo(a) {
 			trace("Hello!");
 			trace(JSCoreANE);
@@ -21,7 +22,7 @@
 				+'(function ($hx_exports) { "use strict";'
 				+'var Context = $hx_exports.Context = function() {'
 				+'};'
-				
+
 				+'Context.main = function() {'
 				+'    Context.instance = new Context();'
 				+'};'
@@ -58,7 +59,7 @@
 			trace(JSON.stringify(res));
 			trace(res.hello);
 			trace(res.world);
-			
+
 			// Проверим разные типы данных и кодировки:
 			var bench:String = "bench"; // Имя метода
 			trace(JSCoreANE.callScriptMethod(bench, true) == true);
@@ -72,9 +73,27 @@
 			trace(JSCoreANE.callScriptMethod(bench, "ѕѓ†ўџўz") == "ѕѓ†ўџўz");
 			trace(JSCoreANE.callScriptMethod(bench, "متن درج کریں") == "متن درج کریں");
 
+			trace("Benchmarking...");
+			var start_time:int;
+			var all_time:int = getTimer();
+			start_time = getTimer();
+
 			benchCalls();
+
+			trace("benchCalls execution time: "+ Math.round(1000*1000/(getTimer()-start_time)) + " op/sec");
+			start_time = getTimer();
+
 			benchTraffic();
+
+			trace("benchTraffic execution time: "+ Math.round(1000*1000/(getTimer()-start_time)) + " op/sec");
+			start_time = getTimer();
+
 			benchJson();
+
+			trace("benchJson execution time: "+ Math.round(1000*1000/(getTimer()-start_time)) + " op/sec");
+			start_time = getTimer();
+
+			trace("Benchmarks all done in "+ (getTimer()-all_time) + " ms");
 
 			stage.frameRate = 1;
 		}
